@@ -1,0 +1,124 @@
+.header {
+    position: relative;
+}
+
+.contact-container .heading {
+    margin-bottom: 3rem;
+}
+
+.contact-container .heading h1 {
+    font-size: 3rem;
+    color: var(--primary);
+}
+
+.contact-container .heading p {
+    font-size: 1.8rem;
+    color: var(--text);
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.contact-info,
+.contact-form {
+    background: #fff;
+    padding: 3.4rem;
+    border-radius: 1rem;
+    border: 0.2rem solid var(--primary);
+    box-shadow: 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.1);
+    transition: .2s ease;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.8rem;
+}
+
+.info-item i {
+    font-size: 2.4rem;
+    color: var(--primary);
+}
+
+.info-item h3 {
+    font-size: 1.8rem;
+    color: var(--primary);
+}
+
+.info-item p {
+    font-size: 1.6rem;
+    color: var(--text);
+    line-height: 1.4;
+}
+
+.social-links {
+    margin-top: 3rem;
+}
+
+.social-links a i {
+    font-size: 3.6rem;
+    color: var(--primary);
+    margin-right: 2rem;
+    transition: .2s ease;
+}
+
+.social-links a i:hover {
+    transform: scale(1.06);
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 0.2rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    border: 0.1rem solid #ddd;
+    border-radius: 0.5rem;
+    transition: .2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0.3rem 0.3rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.form-group textarea {
+    height: 15rem;
+    resize: none;
+}
+
+.contact-form .btn {
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 0.1rem solid transparent;
+}
+
+.contact-form .btn:hover {
+    background: white;
+    border-color: var(--primary);
+    box-shadow: 0.3rem 0.3rem 0 rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}

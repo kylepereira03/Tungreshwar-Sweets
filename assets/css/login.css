@@ -1,0 +1,117 @@
+.header {
+    position: relative;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/sweetsbg.png) no-repeat center/cover;
+}
+
+.login-container {
+    padding: 4rem;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1rem;
+    background: var(--background);
+}
+
+.brand-icon h1 {
+    font-size: 3.8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.greetings {
+    margin-bottom: 1.5rem;
+}
+
+.greetings h2 {
+    font-size: 2.8rem;
+    color: var(--primary);
+}
+
+.greetings p {
+    font-size: 1.6rem;
+    color: var(--text);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-group {
+    position: relative;
+    width: 100%;
+}
+
+.form-group i {
+    position: absolute;
+    left: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.8rem;
+    color: var(--primary);
+}
+
+.form-group input {
+    width: 38rem;
+    padding: 1.4rem 1.4rem 1.4rem 4.5rem;
+    font-size: 1.6rem;
+    border: 0.1rem solid #ddd;
+    border-radius: 0.6rem;
+    transition: all .2s ease;
+}
+
+.form-group input:focus {
+    border-color: var(--primary);
+    box-shadow: 0.3rem 0.3rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.form-group .toggle-password {
+    position: absolute;
+    left: auto;
+    right: 1.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.8rem;
+    color: var(--primary);
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.login-form .btn {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    border: 0.1rem solid transparent;
+    transition: .2s ease;
+}
+
+.login-form .btn:hover {
+    background: var(--background);
+    border-color: var(--primary);
+    box-shadow: 0.3rem 0.3rem 0rem rgba(0, 0, 0, 0.1);
+}
+
+.signup-link {
+    margin-top: .8rem;
+    font-size: 1.5rem;
+    color: var(--text);
+    text-align: center;
+}
+
+.signup-link a {
+    color: var(--primary);
+    font-weight: 600;
+    transition: .2s ease;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}

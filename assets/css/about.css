@@ -1,0 +1,75 @@
+.header {
+    position: relative;
+}
+
+.about-container .heading {
+    margin-bottom: 3rem;
+}
+
+.about-container .heading h1 {
+    font-size: 3rem;
+    color: var(--primary);
+}
+
+.about-container .heading p {
+    font-size: 1.8rem;
+    color: var(--text);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.story, .values{
+    background: #fff;
+    padding: 3.4rem;
+    border-radius: 1rem;
+    border: 0.2rem solid var(--primary);
+    box-shadow: 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.1);
+    transition: .2s ease;
+}
+
+.story h2, .values h2 {
+    font-size: 2.4rem;
+    color: var(--primary);
+    margin-bottom: 2rem;
+}
+
+.story p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: var(--text);
+    margin-bottom: 1.2rem;
+}
+
+.value-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.8rem;
+}
+
+.value-item i {
+    font-size: 2.4rem;
+    color: var(--primary);
+}
+
+.value-item h3 {
+    font-size: 1.8rem;
+    color: var(--primary);
+}
+
+.value-item p {
+    font-size: 1.6rem;
+    color: var(--text);
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+} 

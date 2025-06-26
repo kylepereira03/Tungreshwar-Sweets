@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tungareshwar | Sweets & Namkeen</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon_io/site.webmanifest">
+    <!-- ========== Boxicons ========== -->
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <!-- ========== Swiper JS ========== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- ========== Main CSS ========== -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="has-announcement">
+    <div class="announcement-bar">
+        <p>🎉 Welcome to Tungareshwar Sweets & Namkeen! Enjoy our special discounts on bulk orders! 🎉</p>
+    </div>
+    <header class="header">
+        <nav class="navbar">
+            <button id="menu-icon">
+                <i class='bx bx-menu'></i>
+            </button>
+
+            <a href="index.html" class="brand-icon">
+                <h1>Tungareshwar</h1>
+            </a>
+
+            <div class="navlinks">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html?category=all">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="navicons">
+                <button id="search-icon">
+                    <i class='bx bx-search'></i>
+                </button>
+                <button id="user-icon">
+                    <a href="login.html"><i class='bx bx-user'></i></a>
+                </button>
+                <button id="logout-btn" type="button" style="display: none;">
+                    <i class='bx bx-log-out'></i>
+                </button>
+                <button id="cart-icon">
+                    <a href="cart.html"><i class='bx bx-cart'></i></a>
+                    <span id="cart-count">0</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="swiper hero">
+            <div class="swiper-wrapper hero-content">
+                <div class="swiper-slide banner">
+                    <img src="/assets/images/sweetsbg.png" alt="">
+                    <div class="banner-content">
+                        <h1><span>Meethas</span> jo sirf zubaan par nahi, <span>dil</span> mein utar jaaye!</h1>
+                        <a href="products.html?category=sweets" class="btn">Shop now</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide banner">
+                    <img src="/assets/images/namkeenbg.png" alt="">
+                    <div class="banner-content">
+                        <h1><span>Namak</span> ka <span>sahi tadka</span>, <span>masalon</span> ka <span>anokha
+                                mel</span> - har bite mein <span>swaad ka khel</span>!</h1>
+                        <a href="products.html?category=snacks" class="btn">Shop now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="specials" id="specials">
+        <div class="swiper shortcut-container">
+            <div class="heading">
+                <h2>Our Collections</h2>
+            </div>
+
+            <div class="swiper-wrapper shortcut-content">
+                <div class="swiper-slide shortcut">
+                    <a href="products.html?category=snacks">
+                        <img src="assets/images/products/item1.jpeg" alt="" loading="lazy">
+                        <p>Snacks</p>
+                    </a>
+                </div>
+
+                <div class="swiper-slide shortcut">
+                    <a href="products.html?category=sweets">
+                        <img src="assets/images/products/item2.jpeg" alt="" loading="lazy">
+                        <p>Sweets</p>
+                    </a>
+                </div>
+
+                <div class="swiper-slide shortcut">
+                    <a href="products.html?category=desighee">
+                        <img src="assets/images/products/item3.jpeg" alt="" loading="lazy">
+                        <p>Desi Ghee</p>
+                    </a>
+                </div>
+
+                <div class="swiper-slide shortcut">
+                    <a href="products.html?category=drinks">
+                        <img src="assets/images/products/item4.jpeg" alt="" loading="lazy">
+                        <p>Drinks</p>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+        <div class="special-content">
+            <div class="heading">
+                <h2>Our Specials</h2>
+                <p>Choose from our eclectic assortment of Sweets & Snacks that our customers simply can't get enough of!
+                </p>
+            </div>
+
+            <div class="swiper slide-container">
+                <div class="swiper-wrapper slide-content">
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="assets/images/products/vadapav.jpg" alt="" loading="lazy">
+                            </div>
+
+                            <h4>Vada Pav</h4>
+                            <p>&#8377;20 <span>/ Piece</span></p>
+
+                            <button class="btn" onclick="addToCart({
+                                id: 'vadapav',
+                                name: 'Vada Pav',
+                                price: 20,
+                                unit: 'Piece',
+                                image: 'assets/images/products/vadapav.jpg'
+                            });">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="assets/images/products/samosa.jpg" alt="" loading="lazy">
+                            </div>
+
+                            <h4>Samosa</h4>
+                            <p>&#8377;30 <span>/ Piece</span></p>
+
+                            <button class="btn" onclick="addToCart({
+                                id: 'samosa',
+                                name: 'Samosa',
+                                price: 30,
+                                unit: 'Piece',
+                                image: 'assets/images/products/samosa.jpg'
+                            });">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="assets/images/products/dahikachori.jpg" alt="" loading="lazy">
+                            </div>
+
+                            <h4>Dahi Kachori</h4>
+                            <p>&#8377;35 <span>/ Piece</span></p>
+
+                            <button class="btn" onclick="addToCart({
+                                id: 'dahikachori',
+                                name: 'Dahi Kachori',
+                                price: 35,
+                                unit: 'Piece',
+                                image: 'assets/images/products/dahikachori.jpg'
+                            });">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content" data-category="snacks">
+                            <div class="image">
+                                <img src="assets/images/products/Khaman-Dhokla.jpg" alt="" loading="lazy">
+                            </div>
+
+                            <h4>Khaman Dhokla</h4>
+                            <p>&#8377;95 <span>/ 250gm</span></p>
+
+                            <button class="btn" onclick="addToCart({
+                                id: 'dokhla',
+                                name: 'Dokhla',
+                                price: 95,
+                                unit: '250gm',
+                                image: 'assets/images/products/Khaman-Dhokla.jpg'
+                            });">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content" data-category="sweets">
+                            <div class="image">
+                                <img src="assets/images/products/jalebi.jpg" alt="" loading="lazy">
+                            </div>
+
+                            <h4>Jalebi</h4>
+                            <p>&#8377;120 <span>/ 250gm</span></p>
+
+                            <button class="btn" onclick="addToCart({
+                                id: 'jalebi',
+                                name: 'Jalebi',
+                                price: 120,
+                                unit: '250gm',
+                                image: 'assets/images/products/jalebi.jpg'
+                            });">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content" data-category="snacks">
+                            <div class="image">
+                                <img src="assets/images/products/kothimbir-vadi.jpg" alt="" loading="lazy">
+                            </div>
+
+                            <h4>Kothimbir Wadi</h4>
+                            <p>&#8377;110 <span>/ kg</span></p>
+
+                            <button class="btn" onclick="addToCart({
+                                id: 'kothimbirwadi', 
+                                name: 'Kothimbir Wadi',
+                                price: 110,
+                                unit: 'kg',
+                                image: 'assets/images/products/kothimbir-vadi.jpg'
+                            });">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content" data-category="sweets">
+                            <div class="image">
+                                <img src="assets/images/products/kajukati.jpg" alt="" loading="lazy">
+                            </div>
+
+                            <h4>Kaju Katli</h4>
+                            <p>&#8377;275 <span>/ 250gm</span></p>
+
+                            <button class="btn" onclick="addToCart({
+                                id: 'kajukati', 
+                                name: 'Kaju Katli',
+                                price: 275,
+                                unit: '250gm',
+                                image: 'assets/images/products/kajukati.jpg'
+                            });">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content" data-category="sweets">
+                            <div class="image">
+                                <img src="assets/images/products/white-malai-peda.jpg" alt="" loading="lazy">
+                            </div>
+
+                            <h4>White Malai Peda</h4>
+                            <p>&#8377;150 <span>/ 250gm</span></p>
+
+                            <button class="btn" onclick="addToCart({
+                                id: 'whitemalaipeda',
+                                name: 'White Malai Peda',
+                                price: 150,
+                                unit: '250gm',
+                                image: 'assets/images/products/white-malai-peda.jpg'
+                            });">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content" data-category="desighee">
+                            <div class="image">
+                                <img src="assets/images/products/mathura-peda.jpg" alt="" loading="lazy">
+                            </div>
+
+                            <h4>Mathura Peda</h4>
+                            <p>&#8377;180 <span>/ 250gm</span></p>
+
+                            <button class="btn" onclick="addToCart({
+                                id: 'mathurpeda',
+                                name: 'Mathur Peda',
+                                price: 180,
+                                unit: '250gm',
+                                image: 'assets/images/products/mathura-peda.jpg'
+                            });">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="view-more-btn">
+                <a href="products.html?category=all" class="btn">View More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="heading">
+            <h2>Our Services</h2>
+        </div>
+
+        <div class="services-content">
+            <div class="service-img">
+                <img src="assets/images/customer-handshake.png" alt="" loading="lazy">
+            </div>
+
+            <div class="services-list">
+                <div class="service-item">
+                    <h4>On Time Delivery</h4>
+                    <p>Enjoy the Reliability of Timely Deliveries for Every Occasion</p>
+                </div>
+
+                <div class="service-item">
+                    <h4>Sweet Surprise</h4>
+                    <p>Exclusive offers, discounts, and loyalty rewards for our valued customers</p>
+                </div>
+
+                <div class="service-item">
+                    <h4>Bulk Orders</h4>
+                    <p>Enjoy discounts on large quantities and let us handle the details so you can focus on celebrating
+                    </p>
+                </div>
+
+                <div class="service-item">
+                    <h4>Fresh Ingredients</h4>
+                    <p>HandCrafted to Perfection & Quality Ingredients in Every Sweet</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Footer  -->
+    <footer class="footer">
+        <div class="info">
+            <h1>Tungareshwar</h1>
+            <!-- <h4>Contact</h4> -->
+            <p><strong>Address: </strong>Shop No 8 & 9, Vardhman Shopping Center, Vasai Station Road, Vasai West,
+                Palghar - 401202</p>
+            <p><strong>Phone: </strong>07947152104</p>
+            <p><strong>Hours: </strong>6.30 to 22.30, Mon - Sun</p>
+        </div>
+
+        <div class="quicklinks">
+            <h4>Quick Links</h4>
+            <a href="#" id="account-link">Account</a>
+            <a href="products.html?category=all">Products</a>
+            <a href="about.html">About Us</a>
+            <a href="#services">Services</a>
+        </div>
+
+        <div class="legal">
+            <h4>Legal</h4>
+            <a href="#">Cancellation & Refund</a>
+            <a href="#">Privacy Policy</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="socials">
+            <h4>Follow Us</h4>
+            <div>
+                <a href="https://www.instagram.com/tungareshwar_sweets/#"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.facebook.com/people/Tungareshwar-Sweets/pfbid02tHrbrtb2SfzCYjSTzmqNdfFxRGFXGo3NT4jx6nh1eAUf5ij1gUnNXWGnhD4E9mvPl/"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="https://x.com/tungareshwar"><i class='bx bxl-twitter'></i></a>
+                <a href="https://in.pinterest.com/sweetstungareshwar/"><i class='bx bxl-pinterest'></i></a>
+            </div>
+        </div>
+
+        <div class="seperator"></div>
+
+        <p class="copyright">&copy; 2025 Tungareshwar | All Rights Reserved</p>
+    </footer>
+
+    <!-- ========== Swiper JS ========== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ========== Main Scripts ========== -->
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/search.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/cart-manager.js"></script>
+    <script src="assets/js/login.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const token = localStorage.getItem('authToken');
+            const logoutBtn = document.getElementById('logout-btn');
+            const userIcon = document.querySelector('#user-icon a');
+            const accountLink = document.getElementById('account-link');
+
+            if (token) {
+                logoutBtn.style.display = 'block';
+                userIcon.innerHTML = '<i class="bx bx-user"></i>';
+                accountLink.href = 'user-account.html';
+            } else {
+                logoutBtn.style.display = 'none';
+                accountLink.href = 'login.html';
+            }
+        });
+    </script>
+</body>
+
+</html>

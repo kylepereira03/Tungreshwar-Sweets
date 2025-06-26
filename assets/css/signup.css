@@ -1,0 +1,129 @@
+.header {
+    position: relative;
+}
+
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/sweetsbg.png) no-repeat center/cover fixed;
+}
+
+.signup-container {
+    padding: 4rem;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--background);
+    border-radius: 1rem;
+}
+
+.brand-icon h1 {
+    font-size: 3.8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.greetings {
+    margin-bottom: 1.5rem;
+}
+
+.greetings h2 {
+    font-size: 2.8rem;
+    color: var(--primary);
+}
+
+.greetings p {
+    font-size: 1.6rem;
+    color: var(--text);
+}
+
+/* Form styling */
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.form-group {
+    position: relative;
+    width: 100%;
+}
+
+.form-group i {
+    position: absolute;
+    left: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.8rem;
+    color: var(--primary);
+}
+
+.form-group input {
+    width: 38rem;
+    padding: 1.4rem 1.4rem 1.4rem 4.5rem;
+    font-size: 1.6rem;
+    border: 0.1rem solid #ddd;
+    border-radius: .6rem;
+    transition: .2s ease;
+}
+
+.form-group input:focus {
+    border-color: var(--primary);
+    box-shadow: 0.3rem 0.3rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.form-group .toggle-password {
+    left: auto;
+    right: 1.6rem;
+    cursor: pointer;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.terms label {
+    font-size: 1.4rem;
+    color: var(--text);
+}
+
+.terms a {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.signup-form .btn {
+    width: 100%;
+    margin-top: -1.5rem;
+    padding: 1rem;
+    border-radius: .6rem;
+    border: 0.1rem solid transparent;
+    transition: all .2s ease;
+}
+
+.signup-form .btn:hover {
+    background: var(--background);
+    border: 0.1rem solid var(--primary);
+    box-shadow: 0.3rem 0.3rem 0rem rgba(0, 0, 0, 0.1);
+}
+
+.login-link {
+    margin-top: .8rem;
+    font-size: 1.4rem;
+    color: var(--text);
+    text-align: center;
+}
+
+.login-link a {
+    color: var(--primary);
+    font-weight: 600;
+    transition: .2s ease;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Tungareshwar</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon_io/site.webmanifest">
+    <!-- ========== Icon Fonts ========== -->
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- ========== Main CSS ========== -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/signup.css">
+</head>
+
+<body>
+    <section class="signup">
+        <div class="signup-container">
+            <a href="index.html" class="brand-icon">
+                <h1>Tungareshwar</h1>
+            </a>
+            
+            <div class="greetings">
+                <h2>Create Account</h2>
+                <p>Join us to start ordering your favorite sweets!</p>
+            </div>
+
+            <div class="signup-content">
+                <form class="signup-form" action="" method="POST">
+                    <div class="form-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="username" name="username" placeholder="Username" required>
+                    </div>
+
+                    <div class="form-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" name="email" placeholder="E-mail" required>
+                    </div>
+
+                    <div class="form-group">
+                        <i class="fas fa-phone"></i>
+                        <input type="tel" id="phone" name="Phone_no" placeholder="Phone Number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" placeholder="New Password" required>
+                        <i class="fas fa-eye toggle-password"></i>
+                    </div>
+
+                    <div class="form-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                        <i class="fas fa-eye toggle-password"></i>
+                    </div>
+
+                    <div class="terms">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
+                    </div>
+
+                    <button type="submit" class="btn">Create Account</button>
+                </form>
+
+                <div class="login-link">
+                    Already have an account? <a href="login.html">Login here</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div id="loading-spinner" class="spinner" style="display:none;"></div>
+
+    <!-- ========== Main Scripts ========== -->
+    <script src="assets/js/cart-manager.js"></script>
+    <script src="assets/js/signup.js"></script>
+</body>
+
+</html>

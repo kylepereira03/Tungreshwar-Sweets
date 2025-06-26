@@ -1,0 +1,129 @@
+.header {
+    position: relative;
+}
+
+section {
+    min-height: fit-content;
+}
+
+.user-acc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 0, 0, 0.6)), url(/assets/images/sweetsbg.png) center/cover no-repeat;
+}
+
+.dashboard {
+    max-width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    background: var(--background);
+    border-radius: 1rem;
+    box-shadow: 0 0 .2rem rgba(0, 0, 0, 0.2);
+    gap: 4rem;
+}
+
+.profile-picture img {
+    width: 35rem;
+    height: 35rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#update-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-group {
+    position: relative;
+    width: 100%;
+}
+
+.form-group i {
+    position: absolute;
+    left: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.8rem;
+    color: var(--primary);
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.6rem;
+    color: var(--text);
+    margin-bottom: 0.2rem;
+}
+
+.form-group input {
+    width: 38rem;
+    padding: 1.4rem 1.4rem 1.4rem 4.5rem;
+    font-size: 1.6rem;
+    border: 0.1rem solid #ddd;
+    border-radius: 0.5rem;
+    transition: .2s ease;
+}
+
+.form-group input:focus {
+    border-color: var(--primary);
+    box-shadow: 0.3rem 0.3rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.form-group .toggle-password {
+    left: auto;
+    right: 1.6rem;
+    cursor: pointer;
+}
+
+#update-form .btn {
+    margin-top: 1rem;
+    padding: 0.8rem 2.8rem;
+    font-size: 1.6rem;
+    border-radius: 0.6rem;
+    border: 0.1rem solid transparent;
+}
+
+#update-form .btn:hover {
+    border: 0.1rem solid var(--primary);
+    box-shadow: 0.3rem 0.3rem 0rem rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width:768px) {
+    .profile-picture img {
+        width: 30rem;
+        height: 30rem;
+    }
+}
+
+@media (max-width:668px) {
+    .profile-picture img {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    .form-group input {
+        width: 30rem;
+    }
+}
+
+@media (max-width:568px) {
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .profile-picture img {
+        width: 22rem;
+        height: 22rem;
+    }
+}
+
+@media (max-width:320px) {
+    .profile-picture img {
+        width: 18rem;
+        height: 18rem;
+    }
+}

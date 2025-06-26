@@ -1,0 +1,77 @@
+.header {
+    position: relative;
+}
+
+.products-main .heading h2 {
+    font-size: 3rem;
+    color: var(--primary);
+}
+
+.products-main .heading p {
+    font-size: 1.6rem;
+    color: var(--text);
+}
+
+.filter-sort-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.8rem;
+    margin: 1.5rem 0;
+}
+
+.filter-options, .sort-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.filter-btn, .sort-btn {
+    padding: 0.8rem 2.4rem;
+    font-size: 1.5rem;
+    color: var(--text);
+    background: var(--background);
+    border-radius: .8rem;
+    border: 0.1rem solid var(--primary);
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover,
+.sort-btn.active,
+.sort-btn:hover {
+    color: white;
+    background: var(--primary);
+}
+
+.pro_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: .8rem;
+}
+
+.card {
+    width: 23.5rem;
+    height: 30rem;
+}
+
+.card .btn:hover{
+    background: var(--background);
+}
+
+@media (max-width: 410px) {
+    .card {
+        width: 20rem;
+        height: 27.5rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .card {
+        width: 20rem;
+        height: 26.5rem;
+    }
+}

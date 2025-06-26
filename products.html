@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Tungareshwar</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon_io/site.webmanifest">
+    <!-- ========== BoxIcons as Font ========== -->
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <!-- ========== Main CSS ========== -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/products.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <button id="menu-icon">
+                <i class='bx bx-menu'></i>
+            </button>
+
+            <a href="index.html" class="brand-icon">
+                <h1>Tungareshwar</h1>
+            </a>
+
+            <div class="navlinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="navicons">
+                <button id="search-icon">
+                    <a href="#"><i class='bx bx-search'></i></a>
+                </button>
+                <button id="user-icon">
+                    <a href="login.html"><i class='bx bx-user'></i></a>
+                </button>
+                <button id="logout-btn" style="display: none;">
+                    <i class='bx bx-log-out'></i>
+                </button>
+                <button id="cart-icon">
+                    <a href="cart.html"><i class='bx bx-cart'></i></a>
+                    <span id="cart-count">0</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="products-main" id="products-main">
+
+        <div class="heading">
+            <h2>Our Products</h2>
+            <p>Choose from our eclectic assortment of Sweets & Snacks that our customers simply can't get enough of!</p>
+        </div>
+
+        <div class="filter-sort-options">
+            <div class="filter-options">
+                <button class="filter-btn" data-category="all">All Products</button>
+                <button class="filter-btn" data-category="snacks">Snacks</button>
+                <button class="filter-btn" data-category="sweets">Sweets</button>
+                <button class="filter-btn" data-category="desighee">Desi Ghee</button>
+                <button class="filter-btn" data-category="drinks">Drinks</button>
+            </div>
+            <div class="sort-options">
+                <button class="sort-btn" data-sort="price-asc">Sort by Price: Low to High</button>
+                <button class="sort-btn" data-sort="price-desc">Sort by Price: High to Low</button>
+                <button class="sort-btn" data-sort="name-asc">Sort by Name: A to Z</button>
+                <button class="sort-btn" data-sort="name-desc">Sort by Name: Z to A</button>
+            </div>
+        </div>
+
+        <div class="pro_container">
+            <!-- single product -->
+            <div class="card">
+                <div class="card-content" data-category="snacks">
+                    <div class="image">
+                        <img src="assets/images/products/vadapav.jpg" alt="" loading="lazy">
+                    </div>
+
+                    <h4>Vada Pav</h4>
+                    <p>&#8377;20 <span>/ Piece</span></p>
+
+                    <button class="btn" onclick="addToCart({
+                        id: 'vadapav',
+                        name: 'Vada Pav',
+                        price: 20,
+                        unit: 'Piece',
+                        image: 'assets/images/products/vadapav.jpg'
+                    });">Add to Cart</button>
+                </div>
+                <!-- end of single product -->
+            </div>
+
+            <!-- single product -->
+            <div class="card">
+                <div class="card-content" data-category="snacks">
+                    <div class="image">
+                        <img src="assets/images/products/samosa.jpg" alt="" loading="lazy">
+                    </div>
+
+                    <h4>Samosa</h4>
+                    <p>&#8377;20 <span>/ Piece</span></p>
+
+                    <button class="btn" onclick="addToCart({
+                        id: 'samosa',
+                        name: 'Samosa',
+                        price: 20,
+                        unit: 'Piece',
+                        image: 'assets/images/products/samosa.jpg'
+                    });">Add to Cart</button>
+                </div>
+                <!-- end of single product -->
+            </div>
+
+            <!-- single product -->
+            <div class="card">
+                <div class="card-content" data-category="snacks">
+                    <div class="image">
+                        <img src="assets/images/products/samosapav.jpg" alt="" loading="lazy">
+                    </div>
+
+                    <h4>Samosa Pav</h4>
+                    <p>&#8377;24 <span>/ Piece</span></p>
+
+                    <button class="btn" onclick="addToCart({
+                        id: 'samosapav',
+                        name: 'Samosa Pav',
+                        price: 32,
+                        unit: 'Piece',
+                        image: 'assets/images/products/samosapav.jpg'
+                    });">Add to Cart</button>
+                </div>
+                <!-- end of single product -->
+            </div>
+
+            <!-- single product -->
+            <div class="card">
+                <div class="card-content" data-category="snacks">
+                    <div class="image">
+                        <img src="assets/images/products/dahikachori.jpg" alt="" loading="lazy">
+                    </div>
+
+                    <h4>Dahi Kachori</h4>
+                    <p>&#8377;35 <span>/ Piece</span></p>
+
+                    <button class="btn" onclick="addToCart({
+                        id: 'dahikachori',
+                        name: 'Dahi Kachori',
+                        price: 35,
+                        unit: 'Piece',
+                        image: 'assets/images/products/dahikachori.jpg'
+                    });">Add to Cart</button>
+                </div>
+                <!-- end of single product -->
+            </div>
+
+            <!-- single product -->
+            <div class="card">
+                <div class="card-content" data-category="snacks">
+                    <div class="image">
+                        <img src="assets/images/products/Khaman-Dhokla.jpg" alt="" loading="lazy">
+                    </div>
+
+                    <h4>Khaman Dhokla</h4>
+                    <p>&#8377;95 <span>/ 250gm</span></p>
+
+                    <button class="btn" onclick="addToCart({
+                        id: 'dokhla',
+                        name: 'Dokhla',
+                        price: 95,
+                        unit: '250gm',
+                        image: 'assets/images/products/Khaman-Dhokla.jpg'
+                    });">Add to Cart</button>
+                </div>
+                <!-- end of single product -->
+            </div>
+
+            <!-- single product -->
+            <div class="card">
+                <div class="card-content" data-category="snacks">
+                    <div class="image">
+                        <img src="assets/images/products/kothimbir-vadi.jpg" alt="" loading="lazy">
+                    </div>
+
+                    <h4>Kothimbir Wadi</h4>
+                    <p>&#8377;110 <span>/ 250gm</span></p>
+
+                    <button class="btn" onclick="addToCart({
+                        id: 'kothimbirvadi', 
+                        name: 'Kothimbir Wadi',
+                        price: 110,
+                        unit: '250gm',
+                        image: 'assets/images/products/kothimbir-vadi.jpg'
+                    });">Add to Cart</button>
+                </div>
+                <!-- end of single product -->
+            </div>
+
+            <!-- single product -->
+            <div class="card">
+                <div class="card-content" data-category="sweets">
+                    <div class="image">
+                        <img src="assets/images/products/jalebi.jpg" alt="" loading="lazy">
+                    </div>
+
+                    <h4>Jalebi</h4>
+                    <p>&#8377;120 <span>/ 250gm</span></p>
+
+                    <button class="btn" onclick="addToCart({
+                        id: 'jalebi',
+                        name: 'Jalebi',
+                        price: 120,
+                        unit: '250gm',
+                        image: 'assets/images/products/jalebi.jpg'
+                    });">Add to Cart</button>
+                </div>
+                <!-- end of single product -->
+            </div>
+
+            <!-- single product -->
+            <div class="card">
+                <div class="card-content" data-category="sweets">
+                    <div class="image">
+                        <img src="assets/images/products/kajukati.jpg" alt="" loading="lazy">
+                    </div>
+
+                    <h4>Kaju Katli</h4>
+                    <p>&#8377;275 <span>/ 250gm</span></p>
+
+                    <button class="btn" onclick="addToCart({
+                        id: 'kajukati', 
+                        name: 'Kaju Katli',
+                        price: 275,
+                        unit: '250gm',
+                        image: 'assets/images/products/kajukati.jpg'
+                    });">Add to Cart</button>
+                </div>
+                <!-- end of single product -->
+            </div>
+
+            <!-- single product -->
+            <div class="card">
+                <div class="card-content" data-category="sweets">
+                    <div class="image">
+                        <img src="assets/images/products/kesar-kaju-katli.jpg" alt="" loading="lazy">
+                    </div>
+
+                    <h4>Kesar Kaju Katli</h4>
+                    <p>&#8377;282 <span>/ 250gm</span></p>
+
+                    <button class="btn" onclick="addToCart({
+                        id: 'kesarkaju', 
+                        name: 'Kesar Kaju Katli',
+                        price: 282,
+                        unit: '250gm',
+                        image: 'assets/images/products/kesar-kaju-katli.jpg'
+                    });">Add to Cart</button>
+                </div>
+                <!-- end of single product -->
+            </div>
+
+            <!-- single product -->
+            <div class="card">
+                <div class="card-content" data-category="sweets">
+                    <div class="image">
+                        <img src="assets/images/products/Kesar-Peda.jpg" alt="" loading="lazy">
+                    </div>
+
+                    <h4>Kesar Peda</h4>
+                    <p>&#8377;190 <span>/ 250gm</span></p>
+
+                    <button class="btn" onclick="addToCart({
+                        id: 'keasarpeda',
+                        name: 'Kesar Peda',
+                        price: 190,
+                        unit: '250gm',
+                        image: 'assets/images/products/Kesar-Peda.jpg'
+                    });">Add to Cart</button>
+                </div>
+                <!-- end of single product -->
+            </div>
+
+            <!-- single product -->
+            <div class="card">
+                <div class="card-content" data-category="sweets">
+                    <div class="image">
+                        <img src="assets/images/products/white-malai-peda.jpg" alt="" loading="lazy">
+                    </div>
+
+                    <h4>White Malai Peda</h4>
+                    <p>&#8377;150 <span>/ 250gm</span></p>
+
+                    <button class="btn" onclick="addToCart({
+                        id: 'whitemalaipeda',
+                        name: 'White Malai Peda',
+                        price: 150,
+                        unit: '250gm',
+                        image: 'assets/images/products/white-malai-peda.jpg'
+                    });">Add to Cart</button>
+                </div>
+                <!-- end of single product -->
+            </div>
+
+            <!-- single product -->
+            <div class="card">
+                <div class="card-content" data-category="desighee">
+                    <div class="image">
+                        <img src="assets/images/products/mathura-peda.jpg" alt="" loading="lazy">
+                    </div>
+
+                    <h4>Mathura Peda</h4>
+                    <p>&#8377;180 <span>/ 250gm</span></p>
+
+                    <button class="btn" onclick="addToCart({
+                        id: 'mathurpeda',
+                        name: 'Mathur Peda',
+                        price: 180,
+                        unit: '250gm',
+                        image: 'assets/images/products/mathura-peda.jpg'
+                    });">Add to Cart</button>
+                </div>
+                <!-- end of single product -->
+            </div>
+
+            <!-- single product -->
+            <div class="card">
+                <div class="card-content" data-category="sweets">
+                    <div class="image">
+                        <img src="assets/images/products/Mango-Barfi-335x300.jpg" alt="" loading="lazy">
+                    </div>
+
+                    <h4>Mango Barfi</h4>
+                    <p>&#8377;265 <span>/ 250gm</span></p>
+
+                    <button class="btn" onclick="addToCart({
+                        id: 'malaibarfi',
+                        name: 'Mango Barfi',
+                        price: 265,
+                        unit: '250gm',
+                        image: 'assets/images/products/Mango-Barfi-335x300.jpg'
+                    });">Add to Cart</button>
+                </div>
+                <!-- end of single product -->
+            </div>
+
+            <!-- single product -->
+            <div class="card">
+                <div class="card-content" data-category="sweets">
+                    <div class="image">
+                        <img src="assets/images/products/Punjabi-Barfi.png" alt="" loading="lazy">
+                    </div>
+
+                    <h4>Punjabi Barfi</h4>
+                    <p>&#8377;230 <span>/ 250gm</span></p>
+
+                    <button class="btn" onclick="addToCart({
+                        id: 'punjabibarfi',
+                        name: 'Punjabi Barfi',
+                        price: 230,
+                        unit: '250gm',
+                        image: 'assets/images/products/Punjabi-Barfi.png'
+                    });">Add to Cart</button>
+                </div>
+                <!-- end of single product -->
+            </div>
+
+            <!-- single product -->
+            <div class="card">
+                <div class="card-content" data-category="sweets">
+                    <div class="image">
+                        <img src="assets/images/products/malai-barfi.webp" alt="" loading="lazy">
+                    </div>
+
+                    <h4>Malai Barfi</h4>
+                    <p>&#8377;180 <span>/ 250gm</span></p>
+
+                    <button class="btn" onclick="addToCart({
+                        id: 'malaibarfi',
+                        name: 'Malai Barfi',
+                        price: 180,
+                        unit: '250gm',
+                        image: 'assets/images/products/malai-barfi.webp'
+                    });">Add to Cart</button>
+                </div>
+                <!-- end of single product -->
+            </div>
+
+            <!-- single product -->
+            <div class="card">
+                <div class="card-content" data-category="desighee">
+                    <div class="image">
+                        <img src="assets/images/products/ghee-motichoor-ladoo-unveiling-the-festive-favorite-588093.webp" alt="" loading="lazy">
+                    </div>
+
+                    <h4>Desi Ghee Motichoor Laddoo</h4>
+                    <p>&#8377;200 <span>/ 250gm</span></p>
+
+                    <button class="btn" onclick="addToCart({
+                        id: 'dgmoti',
+                        name: 'Desi Ghee Motichoor Laddoo',
+                        price: 200,
+                        unit: '250gm',
+                        image: 'assets/images/products/ghee-motichoor-ladoo-unveiling-the-festive-favorite-588093.webp'
+                    });">Add to Cart</button>
+                </div>
+                <!-- end of single product -->
+            </div>
+
+            <!-- single product -->
+            <div class="card">
+                <div class="card-content" data-category="drinks">
+                    <div class="image">
+                        <img src="assets/images/products/lassi.jpg" alt="" loading="lazy">
+                    </div>
+
+                    <h4>Lassi</h4>
+                    <p>&#8377;25 <span>/ 100ml</span></p>
+
+                    <button class="btn" onclick="addToCart({
+                        id: 'lassi',
+                        name: 'Lassi',
+                        price: 25,
+                        unit: '100ml',
+                        image: 'assets/images/products/lassi.jpg'
+                    });">Add to Cart</button>
+                </div>
+                <!-- end of single product -->
+            </div>
+
+            <!-- single product -->
+            <div class="card">
+                <div class="card-content" data-category="drinks">
+                    <div class="image">
+                        <img src="assets/images/products/buttermik.jpg" alt="" loading="lazy">
+                    </div>
+
+                    <h4>Butter Milk</h4>
+                    <p>&#8377;25 <span>/ 100ml</span></p>
+
+                    <button class="btn" onclick="addToCart({
+                        id: 'buttermilk',
+                        name: 'Butter Milk',
+                        price: 25,
+                        unit: '100ml',
+                        image: 'assets/images/products/buttermik.jpg'
+                    });">Add to Cart</button>
+                </div>
+                <!-- end of single product -->
+            </div>
+
+            <!-- single product -->
+            <div class="card">
+                <div class="card-content" data-category="desighee">
+                    <div class="image">
+                        <img src="assets/images/products/hit-bite-indian-north-indian-cuisine-sweet-rajasthani-ghevar-fika-without-sugar-coating-desi-ghee-ghewar-fika-500-gms-suger-less-ghewar-for-rakhi-raksha.webp" alt="" loading="lazy">
+                    </div>
+
+                    <h4>Desi Ghee Ghevar</h4>
+                    <p>&#8377;200 <span>/ 250kg</span></p>
+
+                    <button class="btn" onclick="addToCart({
+                        id: 'desigheeghevar',
+                        name: 'Desi Ghee Ghevar',
+                        price: 200,
+                        unit: '250kg',
+                        image: 'assets/images/products/hit-bite-indian-north-indian-cuisine-sweet-rajasthani-ghevar-fika-without-sugar-coating-desi-ghee-ghewar-fika-500-gms-suger-less-ghewar-for-rakhi-raksha.webp'
+                    });">Add to Cart</button>
+                </div>
+                <!-- end of single product -->
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="info">
+            <h1>Tungareshwar</h1>
+            <!-- <h4>Contact</h4> -->
+            <p><strong>Address: </strong>Shop No 8 & 9, Vardhman Shopping Center, Vasai Station Road, Vasai West,
+                Palghar - 401202 (Opposite Railway Station , Vishal Nagar)</p>
+            <p><strong>Phone: </strong>07947152104</p>
+            <p><strong>Hours: </strong>6.30 to 22.30, Mon - Sun</p>
+        </div>
+
+        <div class="quicklinks">
+            <h4>Quick Links</h4>
+            <a href="#" id="account-link">Account</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About Us</a>
+            <a href="index.html#services">Services</a>
+        </div>
+
+        <div class="legal">
+            <h4>Legal</h4>
+            <a href="#">Cancellation & Refund</a>
+            <a href="#">Privacy Policy</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="socials">
+            <h4>Follow Us</h4>
+            <div>
+                <a href="https://www.instagram.com/tungareshwar_sweets/#"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.facebook.com/people/Tungareshwar-Sweets/pfbid02tHrbrtb2SfzCYjSTzmqNdfFxRGFXGo3NT4jx6nh1eAUf5ij1gUnNXWGnhD4E9mvPl/"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="https://x.com/tungareshwar"><i class='bx bxl-twitter'></i></a>
+                <a href="https://in.pinterest.com/sweetstungareshwar/"><i class='bx bxl-pinterest'></i></a>
+            </div>
+        </div>
+
+        <div class="seperator"></div>
+
+        <p class="copyright">&copy; 2025 Tungareshwar | All Rights Reserved</p>
+    </footer>
+
+    <!-- ========== Main Scripts ========== -->
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/search.js"></script>
+    <script src="assets/js/filter.js"></script>
+    <script src="assets/js/cart-manager.js"></script>
+    <script src="assets/js/login.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const token = localStorage.getItem('authToken');
+            const logoutBtn = document.getElementById('logout-btn');
+            const userIcon = document.querySelector('#user-icon a');
+            const accountLink = document.getElementById('account-link');
+
+            if (token) {
+                logoutBtn.style.display = 'block';
+                userIcon.innerHTML = '<i class="bx bx-user"></i>';
+                accountLink.href = 'user-account.html';
+            } else {
+                logoutBtn.style.display = 'none';
+                accountLink.href = 'login.html';
+            }
+        });
+    </script>
+</body>
+
+</html>
